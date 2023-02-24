@@ -1,0 +1,11 @@
+<p *ngIf="loggingOut">
+    <img src="assets/spinner.gif" width="24"> Logging Out...
+</p>
+
+<div class="alert alert-warning" role="alert" *ngIf="!loggingOut">
+    <h4 class="alert-heading">Logout</h4>
+    <p>Are you sure to logout?</p>
+    <hr>
+    <button type="button" class="btn btn-primary mr-2" (click)="doLogout()">Logout</button>
+    <button type="button" class="btn btn-light" [routerLink]="['/welcome']">Cancel</button>
+</div>

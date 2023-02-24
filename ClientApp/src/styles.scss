@@ -1,0 +1,9 @@
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    padding-top: 4.5rem;
+}
+
+a:not([href]) {
+    cursor: pointer;
+}
